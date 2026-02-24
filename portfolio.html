@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="folio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="hero">
+    <div class="header">
+        <a href="#" class="logo">NANDHINI<span id="nm">RAMANATHAN</span></a>
+
+            <div class="link">
+            <a href="#">Home</a>
+            <a href="#about1">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#prt">Projects</a>
+            <a href="#cont">Contact</a>
+            </div>
+        </div>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello It's me</h3><br>
+            <h1>NandhiniRamanathan</h1><br>
+            <h3>I am a <span id="num"></span>
+                <script>           
+        function rand(){
+        let a=["Frontend Developer","Web Developer","Java Developer"]
+        let b=Math.floor(Math.random()*a.length)
+        let num=document.querySelector("#num")
+        num.innerHTML=a[b]
+        }
+        rand();
+        setInterval(rand,1000)
+                </script>
+            </h3><br>
+            <a href="Nandhini.pdf" class="cv" download>Download CV</a>
+        </div>
+
+    <div class="time">
+        <div class="clock">
+            <div class="time">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="format">AM</span>
+            </div>
+    <script>
+        function time(){
+        let clock=new Date()
+        let hr=clock.getHours()
+        let min=clock.getMinutes()
+        let sec=clock.getSeconds()
+        let hours=document.querySelector("#hours")
+        if(hr>=12)
+        format.innerHTML="PM"
+        if(hr>12)
+        hr=hr-12
+        if(hr<10)
+        hr="0"+hr
+        hours.innerHTML=hr;
+        let minutes=document.querySelector("#minutes")
+        if(min<10)
+            min="0"+min
+        minutes.innerHTML=min;
+        let seconds=document.querySelector("#seconds")
+        if(sec<10)
+        sec="0"+sec
+        seconds.innerHTML=sec;
+        
+        }
+        time();
+        setInterval(time,1000)
+    </script>
+    </div>
+</section>
+</div>
+<section class="my">
+</div>
+<div class="about" id="about1">
+    <img src="nand.jpg" class="nand">
+    <div class="cont">
+    <h2 class="abt">AboutMe</h2>
+    <p class="para">I am a Frontend developer with a bachelor degree in Computer Scienece and Engineering.I work on the client side of development,
+         utilizing technologies such as HTML,CSS and Javascript 
+         to create visually appealing and interactive elements that users interact with directly in their web browsers.I can provide clean code and pixel perfect design.</p>
+         <div><button class="btn">Let's Talk</button></div>
+        </div>  
+</div>
+</section>
+
+<section class="skill">
+    <div class="sk" id="skills">
+        <h2 class="ts">Technical Skills</h2>
+        <h4><i class='bx bxl-html5' style='color:#102384' ></i>  HTML</h4>
+        <h4><i class='bx bxl-css3' style='color:#102384' ></i>  CSS</h4>
+        <h4><i class='bx bxl-javascript' style='color:#12278e'></i>  JavaScript</h4>
+        <h4><i class='bx bxl-java' style='color:#122688'></i>Java</h4>
+    </div>
+</section>
+
+<section class="pt" id="prt">
+    <h2 class="p">Projects</h2>
+    <div class="bx">
+    <a href="acolor.html"><img src="color.jpg" class="color"></a>
+    <a href="otp.html"><img src="otpg.jpg" class="otp"></a>
+    <a href="dtime.html"><img src="dc.jpg" class="dtime"></a>
+    <a href="Awall.html"><img src="atime.jpg" class="atime"></a>
+    <a href="convert.html"><img src="convert.jpg" class="length"></a>
+    <a href="car.html"><img src="park.jpg" class="car"></a>
+    </div>
+</section>
+<section class="contact" id="cont">
+
+        <div class="cnt">
+            <p class="ct">Let Me Get You A Beautiful Website.</p>   
+            <button id="bt">Hire Me</button>
+            </div>
+
+            <div class="ft">
+                <p class="end">Nandhini Ramanathan</p>
+                <br>
+                <p class="ed">For More Details</p>
+                <br><br>
+                <br>
+                <div class="social">
+                  <!-- <a href="mailto:nandhini4122001@gmail.com"><img src="em.png" class="em"></a> -->
+                  <a href="https://www.linkedin.com/in/nandhini4122001"><i class='bx bxl-linkedin' style='color:#1730c4' id="lk"></i></a>
+                  <a href="https://github.com/"><i class='bx bxl-github' style='color:#1932c1' id="gt"></i></a>
+                   <div class="ar">
+                  <a href="portfolio.html"><i class='bx bx-up-arrow-alt' style='color:#253eca' id="ar"></i></a>
+                </div>
+            </div>
+            </div>
+</section>
+</body>
+</html>

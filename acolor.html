@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=" color.css">
+
+</head>
+<body>
+    <h1> AUTOMATIC COLOR CHANGE</h1>
+    <h1 id="text"></h1>
+    
+    <script>
+        function rand(){
+        let body=document.querySelector("body")
+        let color=['red','brown','yellow','yellowgreen','green','violet','blue','skyblue','orange','aqua','crimson','deeppink','darkmagenta'];
+        let colorindex=Math.floor(Math.random()*color.length);
+        body.style.backgroundColor=color[colorindex];
+        let text=document.querySelector("#text")
+        text.innerHTML=color[colorindex];
+        }
+        rand()
+        setInterval(rand,1000)
+    </script>
+</body>
+</html>

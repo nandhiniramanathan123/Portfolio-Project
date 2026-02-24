@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <div class="container">
+    <h1>OTP GENERATOR</h1>
+    <lable>Here is your OTP:<span id="num">3263</span></lable>
+    <br><br>
+   <input type="text" id="otp" placeholder="Enter OTP">
+   <button id="btn">verify</button>
+   <p id="output"></p>
+   </div>
+
+    <script>
+        function generate(){
+        let random=Math.floor(1000+Math.random()*9000)
+        return random;
+        }
+        function update(){
+            let num=document.getElementById("num")
+            let input=generate();
+            num.innerHTML=input;
+            return num;
+        } 
+        let button=document.getElementById("btn")
+        button.addEventListener('click',function(){
+            let num=document.getElementById("num")
+            let otp=document.getElementById("otp")
+            let output=document.getElementById("output")
+             let generatedotp=num.innerHTML
+             let enteredotp=otp.value;
+             if(generatedotp===enteredotp)
+             output.innerHTML="Registered"
+            else
+            output.innerHTML="Rejected"
+        })
+         setInterval(update,5000)
+    </script>
+</body>
+</html>
