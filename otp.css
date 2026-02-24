@@ -1,0 +1,44 @@
+h1,lable{ display:flex;
+    justify-content: center;
+}
+#otp{
+    position: relative;
+    left:140px;
+    border-radius:2px;
+   
+}
+.container{
+    margin-top:200px;
+   background-color: rgb(233, 100, 186);
+   height:250px;
+   width:500px;
+   margin-left:530px;
+   padding:20px;
+   border:3px solid rgb(107, 190, 246);
+   border-radius:20px;
+   
+} button{
+    position: relative;
+    left:140px;
+    border-radius:5px;
+    background-color: aqua;
+} 
+/* body{
+    background:linear-gradient(to right,yellow,green);
+}
+body:hover{
+    background:linear-gradient(to right,red,yellow);
+}  */
+lable{
+    font-size:20px;
+    font-weight: bold;
+}
+#output{
+    margin-left:180px;
+    font-size:25px;
+    font-weight: bold;
+}
+body{
+    background-image: url(og.jpg);
+    background-size: cover;
+}

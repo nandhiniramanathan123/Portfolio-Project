@@ -1,0 +1,56 @@
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color:black;
+    position:relative;
+    top:40px;
+}
+label{
+    margin-left:20%;
+   position: relative;
+   top:100px;
+   font-size: 30px;
+   font-weight: bold;
+
+}
+#input1,#input2{
+    position: relative;
+    top:100px;
+    left:20px;
+    border-radius: 5px;
+    border:2px solid black;
+    color:rgb(156, 8, 87);
+}
+#output{
+    margin-left: 26%;
+    position: relative;
+    top:155px;
+    font-size: 25px;
+    color:rgb(114, 7, 7);
+    font-weight: bold;
+}
+.car{
+    width:500px;
+    height:400px;
+    background-color: deeppink;
+    margin-left:33%;
+    margin-top:100px;
+    border:2px solid rgb(7, 65, 90);
+    box-shadow: 15px 15px rgb(45, 44, 44);
+    border-radius: 20px;
+    
+}
+button{
+    position: relative;
+    top:150px;
+    right:180px;
+    border-radius:15px;
+    padding:5px 15px 5px 15px;
+    background-color: cyan;
+    border: 2px solid black;
+} 
+body{
+    background:linear-gradient( to right,crimson,darkmagenta);
+}
