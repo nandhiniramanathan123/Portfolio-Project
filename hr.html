@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hr.css">
+</head>
+<body>
+ <a href="convert.html">Home</a>
+    <div class="box">
+    <h1>Hour to Minutes</h1>
+    <input type="number" id="hr"><br><br>
+    <button onclick="convert()">convert</button>
+    <h2 id="min"></h2>
+    <script>
+        function convert(){
+        let input=document.getElementById("hr").value
+        let output=document.getElementById("min")
+        let c=input*60
+        output.innerHTML=c
+        }
+    </script>
+    </div>
+</body>
+</html>
